@@ -10,10 +10,10 @@ class Layout extends React.Component {
         this.displayName = 'Layout';
     }
     render() {
-        
+
         return (
         	<div>
-        	<Header/>        	
+        	<Header/>
         	{this.props.children}
         	<Footer/>
         	</div>);

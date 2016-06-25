@@ -7,17 +7,11 @@ class Header extends React.Component {
         this.displayName = 'Header';
     }
     render() {
-        return <ul className="nav">
-                <li>
-                <Link className="link" activeClassName='link-active' to="/home">Home</Link>
-                </li>
-          		<li>
-                <Link className="link" activeClassName='link-active' to="about">About</Link>
-                </li>
-          		<li>
-                <Link className="link" activeClassName='link-active' to="vision">Vision</Link>
-                </li>
-        	</ul>;
+        return(<ul className="nav">
+          <li><Link className="link" activeClassName='link-active' to="/">Home</Link></li>
+          <li><Link className="link" activeClassName='link-active' to="about">About</Link></li>
+          <li><Link className="link" activeClassName='link-active' to="vision">Vision</Link></li>
+        	   </ul>);
     }
 }
 
