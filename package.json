@@ -16,7 +16,6 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
-    "watchify": "^3.7.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
@@ -28,8 +27,7 @@
     "babelify": "^7.2.0",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
-    "react-router": "^2.0.1",
-    "watchify": "^3.7.0"
+    "react-router": "^2.0.1"
   },
   "repository": {
     "type": "git",
