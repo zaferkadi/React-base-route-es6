@@ -1,0 +1,6 @@
+<rt-import as="Header" name="default" from='./../components/Header.jsx'/>
+<rt-import as="Footer" name="default" from='./../components/Footer.jsx'/>
+<div>
+        	<Header/>
+        	<Footer/>
+        	</div>

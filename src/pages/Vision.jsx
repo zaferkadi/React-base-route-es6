@@ -10,4 +10,5 @@ class Vision extends React.Component {
     }
 }
 
+module.exports = Vision;
 export default Vision;

@@ -6,10 +6,16 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: './src/app.jsx',
-    output: {
-        path: path.resolve(__dirname, "/dist"),
-        publicPath: "/dist",
-        filename: 'bundle.js'
+    // output: {
+    //     path: path.resolve(__dirname, "/dist"),
+    //     publicPath: "/dist",
+    //     filename: 'bundle.js'
+    // },
+    output:{
+      path:'./dist',
+      filename: 'bundle.js',
+      chunkFilename: '/[id].[hash].js',
+      publicPath: '/dist'
     },
     devServer: {
         inline: true,
@@ -32,7 +38,9 @@ module.exports = {
         }, {
             test: /\.(eot|svg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?/,
             loader: 'url'
-        }]
+        },
+        { test: /\.rt/, loader: "react-templates-loader" }
+        ]
     },
     plugins: [new ExtractTextPlugin("style.css")/*,
     new webpack.optimize.UglifyJsPlugin({

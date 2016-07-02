@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, Route, IndexLink, Link, browserHistory } from 'react-router';
 import Header from './../components/Header.jsx';
 import Footer from './../components/Footer.jsx';
-
+import template from './Layout.html.rt';
 
 class Layout extends React.Component {
     constructor(props) {
@@ -11,12 +11,7 @@ class Layout extends React.Component {
     }
     render() {
 
-        return (
-        	<div>
-        	<Header/>
-        	{this.props.children}
-        	<Footer/>
-        	</div>);
+        return (template.apply(this));
     }
 }
 
